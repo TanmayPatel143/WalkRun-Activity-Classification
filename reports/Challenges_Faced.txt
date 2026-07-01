@@ -1,0 +1,25 @@
+## Challenges Faced Report
+#### Irrelevant Features
+* Columns like date, time, username were not useful
+  -> removed to reduce noise and improve model performance
+#### Data Scaling Issue
+* Sensor values had different ranges
+  -> Applied StandardScaler for normalization
+#### Outliers in Data
+* Extreme values present in acceleration and gyroscope
+-> Removed using IQR method
+#### Model Overfitting (ANN)
+* ANN showed very high accuracy (overfitting risk)
+-> Used validation split and limited epochs
+#### Feature Correlation
+* Some features were highly correlated
+-> Analyzed using heatmap
+#### Model Selection Difficulty
+* Multiple models performed well
+-> Compared using accuracy, F1-score, ROC-AUC
+#### Understanding Sensor Data
+* Raw sensor values were difficult to interpret
+-> Performed EDA and visualization
+#### Class Balance Check
+* Needed to ensure balanced dataset
+-> Verified using countplot
